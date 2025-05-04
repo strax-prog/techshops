@@ -1,0 +1,281 @@
+/* Скидання стилів */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Загальні стилі */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0d0c1d, #1a1a2e);
+  color: #00f0ff;
+  min-height: 100vh;
+}
+
+/* Хедер */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: transparent;
+  text-align: center;
+}
+
+header h1 {
+  color: #00f0ff;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* Навігація */
+nav a {
+  margin-left: 30px;
+  color: #00f0ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00aaff;
+}
+
+/* Навбар */
+.navbar {
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: rgba(0, 255, 255, 0.05);
+  box-shadow: 0 0 10px #00ffff44;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navbar a {
+  position: relative;
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.navbar a::before,
+.navbar a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background: #00ffff;
+  box-shadow: 0 0 5px #00ffff;
+  transform: translateY(-50%);
+}
+
+.navbar a::before {
+  left: -12px;
+}
+
+.navbar a::after {
+  right: -12px;
+}
+
+/* Hero секція */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero-text button {
+  background: transparent;
+  border: 2px solid #00f0ff;
+  color: #00f0ff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hero-text button:hover {
+  background-color: #00f0ff;
+  color: #000;
+}
+
+.hero img {
+  width: 40%;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px #00f0ff44;
+}
+
+/* Секції */
+section {
+  padding: 60px;
+}
+
+.catalog h2,
+.about h2,
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Панель вкладок */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 220px;
+  background-color: #111;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #1a1a1a;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.tab:hover {
+  border-color: #00f0ff;
+  color: #00f0ff;
+}
+
+.tab.active {
+  background-color: #00f0ff;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Каталог */
+.catalog {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* Сітка товарів */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+/* Картка товару */
+.item {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00f0ff33;
+  max-width: 300px;
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.item ul {
+  text-align: left;
+  padding-left: 20px;
+  color: #ccc;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Кнопка покупки */
+.buy-button {
+  background-color: #00f0ff;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+.buy-button:hover {
+  background-color: #00c2d3;
+  transform: scale(1.05);
+}
+
+/* Приховані категорії */
+.product {
+  display: none;
+}
+
+.product.visible {
+  display: block;
+}
+
+.catalog-title {
+  text-align: center;
+  color: #00c2d3;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  right: 0;
+}
+
+
+
+
+
+
+
+

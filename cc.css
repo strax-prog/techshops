@@ -1,0 +1,176 @@
+/* Скидання стилів для всіх елементів */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif; /* Шрифт для sci-fi вигляду */
+}
+
+/* Стилі для тіла сторінки */
+body {
+  background: linear-gradient(135deg, #0d0c1d, #1a1a2e); /* Градієнтний фон */
+  color: #00f0ff; /* Основний колір тексту */
+  min-height: 100vh; /* Мінімальна висота сторінки */
+}
+
+/* Стилі для хедера */
+header {
+  display: flex; /* Гнучке вирівнювання */
+  justify-content: space-between; /* Простір між елементами */
+  align-items: center; /* Вирівнювання по центру */
+  padding: 20px 60px; /* Відступи */
+  background-color: transparent; /* Прозорий фон */
+}
+
+/* Стилі для логотипу */
+.logo {
+  font-size: 28px; /* Розмір шрифту */
+  font-weight: 700; /* Жирність */
+}
+
+/* Стилі для посилань у навігації */
+nav a {
+  margin-left: 30px; /* Відступ між посиланнями */
+  color: #00f0ff; /* Колір тексту */
+  text-decoration: none; /* Без підкреслення */
+  font-weight: 600; /* Жирність */
+  transition: color 0.3s; /* Плавний перехід кольору */
+}
+
+/* Ефект при наведенні на посилання */
+nav a:hover {
+  color: #00aaff; /* Зміна кольору при наведенні */
+}
+
+/* Стилі для секції hero */
+.hero {
+  display: flex; /* Гнучке вирівнювання */
+  align-items: center; /* Вирівнювання по центру */
+  justify-content: space-between; /* Простір між елементами */
+  padding: 60px; /* Відступи */
+  flex-wrap: wrap; /* Перенос елементів */
+}
+
+/* Текст у секції hero */
+.hero-text {
+  max-width: 50%; /* Максимальна ширина */
+}
+
+/* Заголовок у секції hero */
+.hero-text h1 {
+  font-size: 40px; /* Розмір шрифту */
+  margin-bottom: 20px; /* Відступ знизу */
+}
+
+/* Абзац у секції hero */
+.hero-text p {
+  font-size: 18px; /* Розмір шрифту */
+  margin-bottom: 30px; /* Відступ знизу */
+}
+
+/* Кнопки у секції hero */
+.hero-text button {
+  background: transparent; /* Прозорий фон */
+  border: 2px solid #00f0ff; /* Рамка */
+  color: #00f0ff; /* Колір тексту */
+  padding: 10px 20px; /* Відступи */
+  border-radius: 10px; /* Закруглені кути */
+  margin-right: 10px; /* Відступ справа */
+  cursor: pointer; /* Курсор у вигляді руки */
+  transition: all 0.3s; /* Плавний перехід */
+}
+
+/* Ефект при наведенні на кнопку */
+.hero-text button:hover {
+  background-color: #00f0ff; /* Зміна фону */
+  color: #000; /* Зміна кольору тексту */
+}
+
+/* Зображення у секції hero */
+.hero img {
+  width: 40%; /* Ширина */
+  border-radius: 15px; /* Закруглені кути */
+  box-shadow: 0 0 25px #00f0ff44; /* Тінь */
+  height: 500px;
+}
+
+/* Загальні стилі для секцій */
+section {
+  padding: 60px; /* Відступи */
+}
+
+/* Заголовки у секціях catalog, about, contact */
+.catalog h2, .about h2, .contact h2 {
+  font-size: 32px; /* Розмір шрифту */
+  margin-bottom: 20px; /* Відступ знизу */
+}
+
+/* Сітка каталогу */
+.catalog-grid {
+  display: flex; /* Гнучке вирівнювання */
+  gap: 30px; /* Проміжок між елементами */
+  flex-wrap: wrap; /* Перенос елементів */
+}
+
+/* Елементи каталогу */
+.catalog-grid .item {
+  background-color: #1a1a2e; /* Фон */
+  padding: 20px; /* Відступи */
+  border-radius: 15px; /* Закруглені кути */
+  box-shadow: 0 0 15px #00f0ff33; /* Тінь */
+  max-width: 300px; /* Максимальна ширина */
+  flex: 1 1 300px; /* Гнучка ширина */
+}
+
+/* Зображення у елементах каталогу */
+.catalog-grid .item img {
+  width: 100%; /* Ширина */
+  border-radius: 10px; /* Закруглені кути */
+  margin-bottom: 15px; /* Відступ знизу */
+}
+
+/* Стилі для навігаційної панелі */
+.navbar {
+  display: flex; /* Гнучке вирівнювання */
+  gap: 20px; /* Проміжок між елементами */
+  padding: 10px 20px; /* Відступи */
+  border-radius: 10px; /* Закруглені кути */
+  background: rgba(0, 255, 255, 0.05); /* Прозорий фон */
+  box-shadow: 0 0 10px #00ffff44; /* Тінь */
+  justify-content: center; /* Вирівнювання по центру */
+  align-items: center; /* Вирівнювання по центру */
+  position: relative; /* Відносне позиціонування */
+}
+
+/* Посилання у навігаційній панелі */
+.navbar a {
+  position: relative; /* Відносне позиціонування */
+  color: #00ffff; /* Колір тексту */
+  font-family: 'Orbitron', sans-serif; /* Шрифт */
+  font-weight: bold; /* Жирність */
+  text-decoration: none; /* Без підкреслення */
+  padding: 5px 10px; /* Відступи */
+}
+
+/* Декоративні елементи перед і після посилання */
+.navbar a::before,
+.navbar a::after {
+  content: ""; /* Порожній контент */
+  position: absolute; /* Абсолютне позиціонування */
+  top: 50%; /* По центру вертикально */
+  width: 10px; /* Ширина */
+  height: 2px; /* Висота */
+  background: #00ffff; /* Колір */
+  box-shadow: 0 0 5px #00ffff; /* Тінь */
+  transform: translateY(-50%); /* Вирівнювання по центру */
+}
+
+/* Лінія перед посиланням */
+.navbar a::before {
+  left: -12px; /* Відступ зліва */
+}
+
+/* Лінія після посилання */
+.navbar a::after {
+  right: -12px; /* Відступ справа */
+}

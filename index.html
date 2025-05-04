@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TECHSHOP – Каталог</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>TECHSHOP</h1>
+    <h2 class="catalog-title">Каталог товарів</h2>
+  </header>
+
+  <div class="catalog">
+    <div class="tabs">
+      <div class="tab active" onclick="showCategory('mouse')">🖱️ Мишки</div>
+      <div class="tab" onclick="showCategory('headset')">🎧 Гарнітури</div>
+      <div class="tab" onclick="showCategory('chair')">🪑 Крісла</div>
+      <div class="tab" onclick="showCategory('mic')">🎤 Мікрофони</div>
+      <div class="tab" onclick="showCategory('mat')">🖤 Коврики</div>
+    </div>
+
+    <!-- Категорія: Мишки -->
+    <div id="mouse" class="product visible">
+      <div class="product-grid">
+        <div class="item">
+          <img src="../img/361663641.jpg"G Pro Superlight">
+          <h3>Ігрова мишка G Pro Superlight 2</h3>
+          <p>Нове покоління мишки, яка вже встигла отримати нагороди на чемпіонатах по всьому світу...</p>
+          <p><strong>Ціна: 6999 грн</strong></p>
+          <button onclick="window.location.href='shop/shop.html'">Купити</button>
+        </div>
+
+      
+          
+         
+           
+                
+
+       
+        <!-- Можеш додати ще картки аналогічно -->
+      </div>
+    </div>
+
+    <!-- Категорія: Гарнітури -->
+    <div id="headset" class="product">
+      <div class="product-grid">
+        <div class="item">
+          <img src="../images/headset.png" alt="Гарнітура">
+          <h3>Геймерська гарнітура HyperX</h3>
+          <p>Чіткий звук, просторове аудіо та комфорт на весь день гри.</p>
+          <p><strong>Ціна: 3499 грн</strong></p>
+          <button class="buy-button">Купити</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Інші категорії за потребою... -->
+  </div>
+
+  <script>
+    function showCategory(categoryId) {
+      document.querySelectorAll('.product').forEach(p => p.classList.remove('visible'));
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.getElementById(categoryId).classList.add('visible');
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+
+</html>
